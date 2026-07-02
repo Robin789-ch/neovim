@@ -18,3 +18,15 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.opt.numberwidth = 4
 vim.opt.signcolumn = "yes"
+
+-- Required fold settings for UFO
+vim.o.foldcolumn = '1'
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+vim.opt.fillchars = {
+  foldopen = "",
+  foldclose = "",
+  fold = " ",
+  foldsep = "▕",
+}

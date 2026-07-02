@@ -9,9 +9,6 @@ return {
       pattern = { 'rust', 'python', 'markdown', 'lua' },
       callback = function()
         vim.treesitter.start() -- highlighting
-        -- vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'     -- folds
-        -- vim.wo.foldmethod = 'expr'
-        -- vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()" -- indentation
       end,
     })
   end,

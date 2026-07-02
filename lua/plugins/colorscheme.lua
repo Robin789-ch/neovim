@@ -1,10 +1,19 @@
 -- lua/plugins/rose-pine.lua
 return {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
+  "rebelot/kanagawa.nvim",
   opts = {},
   config = function()
-    vim.cmd("colorscheme tokyonight")
+    require('kanagawa').setup({
+      colors = {
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = "none"
+            }
+          }
+        }
+      }
+    })
+    vim.cmd("colorscheme kanagawa-wave")
   end,
 }
