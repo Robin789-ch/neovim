@@ -1,19 +1,12 @@
 -- lua/plugins/rose-pine.lua
 return {
-  "rebelot/kanagawa.nvim",
+  "webhooked/kanso.nvim",
   opts = {},
   config = function()
-    require('kanagawa').setup({
-      colors = {
-        theme = {
-          all = {
-            ui = {
-              bg_gutter = "none"
-            }
-          }
-        }
-      }
+    require('kanso').setup({
+      minimal = true,
+      foreground = "saturated",
     })
-    vim.cmd("colorscheme kanagawa-wave")
+    vim.cmd("colorscheme kanso-mist")
   end,
 }
